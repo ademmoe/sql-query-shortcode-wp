@@ -23,11 +23,8 @@ function shortcode_sqltable() {
         $sql = "SELECT id, name, betrag, grund FROM bestand";
 
 
-        echo "<h1>Willkommen im Interface der Klassenkasse</h1>";
-        echo "<p>Hier wird der Stand der Klassenkasse angezeigt.</p>";
-
         echo "<table border='1' cellpadding='5' cellspacing='0'>";
-        echo "<tr><th>Lfd. Nr</th><th>Name</th><th>Betrag</th><th>Grund</th></tr>";
+        echo "<tr><th>Lfd. Nr</th><th>Name</th><th>Betrag</th><th>Grund</th></tr>"; //Change the name of the columns, remove or add more columns
 
         foreach ($pdo->query($sql) as $row) {
             echo "<tr>";
