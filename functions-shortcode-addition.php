@@ -24,7 +24,7 @@ function shortcode_sqltable() {
 
 
         echo "<table border='1' cellpadding='5' cellspacing='0'>";
-        echo "<tr><th>Lfd. Nr</th><th>Name</th><th>Betrag</th><th>Grund</th></tr>"; //Change the name of the columns, remove or add more columns
+        echo "<tr><th>Lfd. Nr</th><th>Name</th><th>Betrag</th><th>Grund</th></tr>"; // Change the name of the columns, remove or add more columns
 
         foreach ($pdo->query($sql) as $row) {
             echo "<tr>";
