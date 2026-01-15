@@ -1,11 +1,11 @@
-function shortcode_klassenkasse() {
+function shortcode_sqltable() {
     ob_start();
 
     // Database connection settings
     $host = "localhost";      // Change if needed
-    $dbname = "klassenkasse"; // Change to your DB name
-    $username = "klassenkasse_user";
-    $password = "klassenkasse";
+    $dbname = "databasename"; // Change to your DB name
+    $username = "your_username";
+    $password = "your_password";
 
     try {
         // Create la connection
@@ -46,4 +46,4 @@ function shortcode_klassenkasse() {
 
     return ob_get_clean(); // Return output
 }
-add_shortcode('klassenkasse', 'shortcode_klassenkasse');
+add_shortcode('sqltable', 'shortcode_sqltable');
